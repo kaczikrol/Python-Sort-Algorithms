@@ -4,10 +4,12 @@ def BubbleSort(list):
     length=len(list)
     for i in range(length-1):
         changes = False
+
         for j in range(length-1):
             if list[j]>list[j+1]:
                 list[j], list[j+1] = list[j+1], list[j]
                 changes=True
+
         if changes==False:
             break
     return list
