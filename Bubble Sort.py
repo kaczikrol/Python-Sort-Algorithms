@@ -5,11 +5,8 @@ def BubbleSort(list):
     for i in range(length-1):
         changes = False
         for j in range(length-1):
-            firstValue=list[j]
-            secondValue=list[j+1]
-            if firstValue>secondValue:
-                list[j]=secondValue
-                list[j+1]=firstValue
+            if list[j]>list[j+1]:
+                list[j], list[j+1] = list[j+1], list[j]
                 changes=True
         if changes==False:
             break
